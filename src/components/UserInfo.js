@@ -11,7 +11,7 @@ export class UserInfo extends Component {
         e.preventDefault();
         //PROCESS YOUR FORM // This is whare you send information to you API for processing
         this.props.nextStep();
-    }
+    };
 
     back = e => {
         e.preventDefault();
@@ -48,27 +48,27 @@ export class UserInfo extends Component {
                     />
 
                     <ListItem
-                        primaryText="TEST_YES"
+                        primaryText="YES I HAVE BEEN TESTED"
                         secondaryText={TEST_YES}
                     />
 
                     <ListItem
-                        primaryText="NumOfFamilyMembers"
+                        primaryText="Number Of Family Members"
                         secondaryText={ NumOfFamilyMembers }
                     />
 
                     <ListItem
-                        primaryText="HowManyFamilyMembersHaveDoneTest"
+                        primaryText="How Many Family Members Have Done COVID'19 Test"
                         secondaryText={ HowManyFamilyMembersHaveDoneTest }
                     />
 
                     <ListItem
-                        primaryText="Present_Location"
+                        primaryText="Present Location"
                         secondaryText={ Present_Location }
                     />
 
                     <ListItem
-                        primaryText=" Previous_Location"
+                        primaryText=" Previous Location"
                         secondaryText={ Previous_Location}
                     />
 
