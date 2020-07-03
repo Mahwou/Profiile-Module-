@@ -10,6 +10,12 @@ export class Success extends Component {
         e.preventDefault();
         this.props.prevStep();
     };
+signOut = e =>{
+        e.preventDefault();
+
+         localStorage.clear();
+         window.location.href='/'
+    }
 
     render() {
         return (
@@ -28,7 +34,7 @@ export class Success extends Component {
                         label="Sign Out"
                         primary={true}
                         style={styles.button}
-                        onClick={this.continue} //what does continue do? It calls nextStep
+                        onClick={this.signOut} //what does continue do? It calls nextStep
                     />
 
                     <RaisedButton
